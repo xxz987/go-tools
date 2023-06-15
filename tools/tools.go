@@ -50,7 +50,7 @@ func MergeTwoJson(s1, s2 string) (res string, err error) {
 			if err != nil {
 				return
 			}
-			m1[k], err = MergeTwoJsonByTree(string(str1), string(str2))
+			m1[k], err = MergeTwoJson(string(str1), string(str2))
 			if err != nil {
 				return
 			}
